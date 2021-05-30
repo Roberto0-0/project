@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+
 :root {
     --primyre-color: #dbdbda;
     --secodary-color: #242222;
