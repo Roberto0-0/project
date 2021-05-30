@@ -168,7 +168,7 @@ body {
     }
 
     .menu li{
-        padding-top: .5rem;
+        padding-top: 1rem;
         margin: 0 1rem;
         border-bottom: 1.5px solid var(--secodary-color);
     }
