@@ -5,7 +5,6 @@ body.onclick = () => {
         if(fullScreen){
             fullScreen.classList.toggle('pop-up')
             fullScreen.onclick = (evento) => {
-                console.log(evento.target.className)
                 if(evento.target.className != "remove-pop-up"){
                     fullScreen.classList.remove('pop-up');
                     localStorage.SavePopup = fullScreen
