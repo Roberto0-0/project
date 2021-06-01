@@ -1,7 +1,7 @@
 const body = document.getElementById('body')
 body.onclick = () => {
     const fullScreen = document.getElementById('full-screen')
-    if(localStorage.SavePopup != fullScreen){
+    if(localStorage.SavePopup == fullScreen){
         if(fullScreen){
             fullScreen.classList.toggle('pop-up')
             fullScreen.onclick = (evento) => {
