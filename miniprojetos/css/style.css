@@ -85,3 +85,22 @@ body {
         left: 23%;
     }
 }
+
+@media(min-width: 768px){
+    .box {
+        width: 100%;
+    }
+
+    .menu {
+        margin: auto;
+        width: 565px;
+    }
+    .menu li {
+        width: 365px;
+    }
+
+    #img-conversor {
+        width: 330px;
+        margin-left: 20px;
+    }
+}
