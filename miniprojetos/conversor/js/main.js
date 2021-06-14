@@ -21,7 +21,7 @@ btnConversor.onclick = () => {
             }else if (selectValue1 == "US$"){
                 let valor1 = Number(input1.value)
                 // let valor2 = Number(input2.value)
-                let mult = valor1 * 5.07
+                let mult = valor1 * 5.06
                 resu.innerHTML = `${selectValue2} ${mult}`
             }
         }
