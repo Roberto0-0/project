@@ -277,6 +277,10 @@ body {
         border-bottom: 1.5px solid var(--secodary-color);
     }
 
+    #menu-dropdown {
+        display: none;
+    }
+
     #nav.active .menu {
         display: block;
     }
