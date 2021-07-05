@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -42,7 +44,7 @@ body {
 }
 
 #logo-dark{
-    width: 130px;
+    width: 135px;
     height: 120px;
     cursor: pointer;
 }
@@ -135,22 +137,30 @@ body {
 }
 
 .welcome h1 {
-    font-family: sans-serif;
+    font-family: 'Varela Round', sans-serif;
     font-size: 4rem;
     color: var(--secodary-color);
 }
 
 .welcome p {
     margin-top: 10px;
-    font-family: sans-serif;
+    font-family: 'Varela Round', sans-serif;
     font-size: 1.7rem;
     color: var(--secodary-color);
+}
+
+.img-decoration {
+    margin: 50px;
+    width: 50%;
+    height: 300px;
+
 }
 
 .img-decoration svg{
     width: 100%;
     max-width: 600px;
     min-width: 200px;
+    height: 300px;
     cursor: pointer;
 }
 
@@ -158,43 +168,51 @@ body {
     margin: auto;
     width: 97%;
     max-width: 1250px;
+    height: 120px;
 }
 
 .footer-box {
     display: flex;
     width: 100%;
     max-width: 1250px;
-    margin: auto;
+    height: 70px;
+
 }
 
 .social-network {
-    display: flex;
     margin: auto;
-    list-style: none;
-    gap: 1.5rem;
-    align-items: center;
+    display: flex;
+    width: 200px;
+    height: 70px;
 }
 
-#footer-logo-dark{
-    width: 130px;
+.social-network li {
+    margin: 20px auto;
+    background: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--secodary-color);
     cursor: pointer;
 }
+
 
 .social-network img {
+    margin: 4px 0px 0px 5px;
     width: 30px;
-    cursor: pointer;
 }
 
 .copyright {
-    margin: auto;
+    padding: 20px 0px 0px 0px;
     width: 100%;
     max-width: 1250px;
+    height: 30px;
     text-align: center;
 }
 
 .copyright p {
     color: var(--secodary-color);
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: sans-serif;
 }
 
@@ -252,7 +270,7 @@ body {
         display: none;
         position: absolute;
         width: 97%;
-        max-width: 1250;
+        max-width: 1250px;
         top: 140px;
         height: calc(100vh - 50px);
         background: var(--primyre-color);
@@ -321,12 +339,12 @@ body {
     .body-box {
         margin: -110px auto;
         display: block;
+        height: 700px;
     }
     
     .welcome {
-        margin: auto;
+        margin: 130px auto;
         width: 90%;
-        margin-top: 130px;
     }
 
     .welcome h1 {
@@ -337,21 +355,70 @@ body {
         font-size: 1.7rem;
     }
 
-    .img-decoration svg {
-        margin: -130px auto;
+    .img-decoration {
+        margin: -100px auto;
         width: 100%;
+        height: 300px;
+    }
+
+    .img-decoration svg {
+        margin: auto;
+        width: 100%;
+        height: 300px;
     }
 
     .footer {
-        margin: 200px auto;
+        margin: auto;
+        width: 97%;
+        max-width: 1250px;
+        height: 120px;
     }
-
+    
+    .footer-box {
+        margin: auto;
+        display: flex;
+        width: 100%;
+        max-width: 1250px;
+        height: 70px;
+    
+    }
+    
     .social-network {
-        margin-left: 20px;
+        margin: auto;
+        display: flex;
+        width: 200px;
+        height: 70px;
     }
-
+    
+    .social-network li {
+        margin: 20px auto;
+        background: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid var(--secodary-color);
+        cursor: pointer;
+    }
+    
+    
+    .social-network img {
+        margin: 4px 0px 0px 5px;
+        width: 30px;
+    }
+    
+    .copyright {
+        padding: 20px 0px 0px 0px;
+        margin: auto;
+        width: 100%;
+        max-width: 1250px;
+        height: 30px;
+        text-align: center;
+    }
+    
     .copyright p {
-        margin-right: 30px;
+        color: var(--secodary-color);
+        font-size: 1rem;
+        font-family: sans-serif;
     }
 
     .box-pop-up h1 {
