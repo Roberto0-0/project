@@ -34,14 +34,16 @@ body {
 #nav {
     display: flex;
     margin: auto;
-    width: 90%;
+    width: 97%;
     max-width: 1250px;
+    height: 120px;
     align-items: center;
     justify-content: space-between;
 }
 
 #logo-dark{
-    width: 150px;
+    width: 130px;
+    height: 120px;
     cursor: pointer;
 }
 
@@ -120,11 +122,9 @@ body {
 
 .body-box {
     display: flex;
-    margin: auto;
-    margin-top: 20px;
-    width: 90%;
+    margin: 20px auto;
+    width: 97%;
     max-width: 1250px;
-    height: 500px;
 }
 
 .welcome {
@@ -147,31 +147,22 @@ body {
     color: var(--secodary-color);
 }
 
-.img-decoration {
-    width: 300px;
-    height: 300px;
-    background: #ff4500;
-    margin-left: 200px;
-    margin-top: 30px;
-    transition: .70s;
-    border-radius: 20% 20% 50%;
+.img-decoration svg{
+    width: 100%;
+    max-width: 600px;
+    min-width: 200px;
     cursor: pointer;
-}
-
-.img-decoration:hover {
-    margin-top: -10px;
 }
 
 .footer {
     margin: auto;
-    margin-top: 20px;
-    width: 100%;
-    height: auto;
+    width: 97%;
+    max-width: 1250px;
 }
 
 .footer-box {
     display: flex;
-    width: 90%;
+    width: 100%;
     max-width: 1250px;
     margin: auto;
 }
@@ -196,7 +187,7 @@ body {
 
 .copyright {
     margin: auto;
-    width: 90%;
+    width: 100%;
     max-width: 1250px;
     text-align: center;
 }
@@ -230,7 +221,7 @@ body {
     width: 50%;
     min-width: 300px;
     height: 50%;
-    background: white;
+    background: #ffffff;
     text-align: center;
     border-radius: 20px;
 }
@@ -248,7 +239,7 @@ body {
     border-radius: 50%;
     left: 97%;
     top: -5%;
-    background: white;
+    background: #ffffff;
     border: 2px solid black;
     cursor: pointer;
     font-family: sans-serif;
@@ -260,7 +251,8 @@ body {
     .menu {
         display: none;
         position: absolute;
-        width: 90%;
+        width: 97%;
+        max-width: 1250;
         top: 140px;
         height: calc(100vh - 50px);
         background: var(--primyre-color);
@@ -277,21 +269,8 @@ body {
         border-bottom: 1.5px solid var(--secodary-color);
     }
 
-    #menu-dropdown {
-        display: none;
-    }
-
     #nav.active .menu {
         display: block;
-    }
-
-    .drop-down li{
-        display: none;
-        border-bottom: none;
-    }
-
-    .drop-down a{
-        left: 10px;
     }
 
     #button-mobile {
@@ -340,13 +319,13 @@ body {
     }
 
     .body-box {
+        margin: -110px auto;
         display: block;
     }
     
-
     .welcome {
         margin: auto;
-        width: 325px;
+        width: 90%;
         margin-top: 130px;
     }
 
@@ -358,11 +337,13 @@ body {
         font-size: 1.7rem;
     }
 
-    .img-decoration {
-        width: 250px;
-        height: 250px;
-        margin-left: 35px;
-        margin-top: 10px;
+    .img-decoration svg {
+        margin: -130px auto;
+        width: 100%;
+    }
+
+    .footer {
+        margin: 200px auto;
     }
 
     .social-network {
