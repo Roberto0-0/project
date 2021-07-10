@@ -43,10 +43,15 @@ body {
     justify-content: space-between;
 }
 
-#logo-dark{
-    width: 135px;
-    height: 120px;
-    cursor: pointer;
+#logo{
+    margin: 0px 0px 0px 20px;
+    width: 100px;
+    height: 100px;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
 }
 
 #button-mobile {
@@ -55,6 +60,7 @@ body {
 
 .menu {
     display: flex;
+    height: 40px;
     list-style: none;
     gap: 2rem;
 }
@@ -67,15 +73,22 @@ body {
     cursor: pointer;
 }
 
-.menu img {
-    width: 30px;
+.menu #img {
+    margin: 0px 0px 0px 40px;
+    width: 50px;
+    height: 40px;
+}
+
+.menu #img img {
+    display: block;
+    margin: auto;
     cursor: pointer;
 }
 
 .menu-dropdown{
     display: none;
     position: absolute;
-    top: 110px;
+    top: 95px;
     left: 75%;
     width: 87px;
     height: 120px;
@@ -127,6 +140,7 @@ body {
     margin: 20px auto;
     width: 97%;
     max-width: 1250px;
+    min-height: calc(100vh);
 }
 
 .welcome {
@@ -187,7 +201,7 @@ body {
 }
 
 .social-network li {
-    margin: 20px auto;
+    margin: auto;
     background: none;
     width: 40px;
     height: 40px;
@@ -196,10 +210,8 @@ body {
     cursor: pointer;
 }
 
-
 .social-network img {
-    margin: 4px 0px 0px 5px;
-    width: 30px;
+    margin: 4px 0px 0px 4px;
 }
 
 .copyright {
@@ -266,13 +278,17 @@ body {
 
 /* dispositivos móveis */
 @media(max-width: 600px){
+    #logo {
+        width: 70px;
+        height: 70px;
+    }
     .menu {
         display: none;
         position: absolute;
         width: 97%;
         max-width: 1250px;
         top: 140px;
-        height: calc(100vh - 50px);
+        height: calc(90vh - 50px);
         background: var(--primyre-color);
         z-index: 1000;
     }
@@ -284,7 +300,12 @@ body {
     .menu li{
         padding-top: 1rem;
         margin: 0 1rem;
-        border-bottom: 1.5px solid var(--secodary-color);
+        border-bottom: 1px solid var(--secodary-color);
+    }
+
+    .menu #img {
+        margin: 0px 0px 0px 5px;
+        border-bottom: none;
     }
 
     #nav.active .menu {
@@ -300,14 +321,14 @@ body {
         color: var(--secodary-color);
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: 300;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         align-items: center;
         cursor: pointer;
         gap: .8rem;
     }
 
     .hamburger {
-        width: 25px;
+        width: 20px;
         border-top: 2px solid var(--secodary-color);
         margin-top: 5px;
     }
@@ -315,7 +336,7 @@ body {
     .hamburger::after, .hamburger::before{
         content: '';
         display: block;
-        width: 25px;
+        width: 20px;
         height: 2px;
         background: currentColor;
         margin-top: 5px;

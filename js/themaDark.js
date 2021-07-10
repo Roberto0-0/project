@@ -7,13 +7,13 @@ const github = document.getElementById('github-dark')
 buttonThemaDark.onclick = function(){
     document.body.classList.toggle('themaDark')
     if(document.body.classList.contains('themaDark')){
-        buttonThemaDark.src = "img/sun-fill.png"
+        buttonThemaDark.src = "img/sun.png"
         logoDark.src = "img/logo-white.png"
         facebook.src = "img/facebook-white.png"
         instagram.src = "img/instagram-white.png"
         github.src = "img/github-white.png"
     }else{
-        buttonThemaDark.src = "img/moon-fill.png"
+        buttonThemaDark.src = "img/moon.png"
         logoDark.src = "img/logo-dark.png"
         facebook.src = "img/facebook-dark.png"
         instagram.src = "img/instagram-dark.png"
