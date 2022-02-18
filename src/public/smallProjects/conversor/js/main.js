@@ -14,11 +14,11 @@ btnConversor.onclick = () => {
         }else{
             if(selectValue1 == "R$"){
                 let valor1 = Number(input1.value)
-                let mult = valor1 * 5.06
+                let mult = valor1 / 5.17
                 resu.innerHTML = `${selectValue2} ${mult.toFixed(2)}`
             }else if (selectValue1 == "US$"){
                 let valor1 = Number(input1.value)
-                let mult = valor1 / 5.06
+                let mult = valor1 * 5.06
                 resu.innerHTML = `${selectValue2} ${mult.toFixed(2)}`
             }
         }

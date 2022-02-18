@@ -23,16 +23,14 @@ body {
 }
 
 .menu {
-    margin: auto;
-    margin-top: 80px;
+    margin: 10px auto;
     width: 70%;
     list-style: none;
 }
 
 .menu li{
     position: relative;
-    margin: auto;
-    margin-top: 50px;
+    margin: 50px auto;
     width: 80%;
     height: 450px;
     background: white;
@@ -47,9 +45,14 @@ body {
 }
 
 #img-conversor {
-    width: 300px;
-    margin-top: 20px;
-    margin-left: 38px;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+#img-conversor img {
+    align-items: center
 }
 
 .link-conversor {
@@ -75,9 +78,7 @@ body {
     }
 
     #img-conversor {
-        width: 290px;
-        margin-top: 20px;
-        margin-left: 16px;
+        width: 230px;
     }
 
     .link-conversor {
@@ -100,7 +101,6 @@ body {
     }
 
     #img-conversor {
-        width: 330px;
-        margin-left: 20px;
+       width: 250px;
     }
 }
