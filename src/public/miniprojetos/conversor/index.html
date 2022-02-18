@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+        <h1 class="titulo">Conversor de moedas</h1>
+        <button id="btn-view">+</button>
+        <div id="resultado">...</div>
+        <div class="box-input">
+            <input type="number" name="" id="input-1" maxlength="20" placeholder="0" required>
+            <!-- <input type="number" name="" id="input-2" maxlength="20" placeholder="5,05" required> -->
+        </div>
+        <div class="box-select">
+            <select name="" id="select-1" required>
+                <option selected disabled value>Selecione</option>
+                <option value="">R$</option>
+                <option value="">US$</option>
+            </select>
+            <select name="" id="select-2" required>
+                <option selected disabled value>Selecione</option>
+                <option value="">R$</option>
+                <option value="">US$</option>
+            </select>
+        </div>
+        <button type="submit" id="btn-conversor">Converter</button>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/btnView.js"></script>
+</body>
+</html>
